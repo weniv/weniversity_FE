@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "image": "/images/camps/javascript/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "JavaScript 부트캠프 1기",
+    "teacher": "licat",
+    "price": "38000",
+    "discount": "30000"
+  },
+  {
+    "id": "2",
+    "image": "/images/camps/react/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "React 마스터 클래스 1기",
+    "teacher": "jejucoding",
+    "price": "45000",
+    "discount": "35000"
+  },
+  {
+    "id": "3",
+    "image": "/images/camps/python/thumbnail.webp",
+    "type": "백엔드",
+    "title": "Python 웹 개발 부트캠프 1기",
+    "teacher": "jaehyun",
+    "price": "42000",
+    "discount": "32000"
+  },
+  {
+    "id": "4",
+    "image": "/images/camps/figma/thumbnail.webp",
+    "type": "디자인",
+    "title": "Figma UI/UX 디자인 워크샵",
+    "teacher": "sarah",
+    "price": "35000",
+    "discount": "28000"
+  },
+  {
+    "id": "5",
+    "image": "/images/camps/react/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "React Native 앱 개발 캠프",
+    "teacher": "mike",
+    "price": "48000",
+    "discount": "38000"
+  },
+  {
+    "id": "6",
+    "image": "/images/camps/python/thumbnail.webp",
+    "type": "백엔드",
+    "title": "Python 데이터 사이언스 코스",
+    "teacher": "dataking",
+    "price": "52000",
+    "discount": "42000"
+  }
+]

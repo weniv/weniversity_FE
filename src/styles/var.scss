@@ -1,0 +1,46 @@
+@import "./function.scss";
+// color
+$background: #fff;
+$primary: #2e6ff2;
+
+$grayLv1: #f3f5fa;
+$grayLv2: #d9dbe0;
+$grayLv3: #8d9299;
+
+$grayLv4: #47494d;
+$activation: #dee8ff;
+
+// size
+$maxWidth: 119rem;
+$subMaxWidth: 79rem;
+$padding: 2.4rem;
+
+$headerHeight: fcSize(60, 74);
+$scrollBarHeight: 0.4rem;
+$borderRadius: 0.625em;
+
+$breakPoint: (
+  mobile: 640px,
+  tablet: 1024px,
+  pc: 1190px,
+);
+
+// 폰트사이즈
+.fs14 {
+  font-size: fcSize(13, 14);
+}
+.fs16 {
+  font-size: fcSize(14, 16);
+}
+.fs18 {
+  font-size: fcSize(16, 18);
+}
+.fs24 {
+  font-size: fcSize(20, 24);
+}
+.fs32 {
+  font-size: fcSize(22, 32);
+}
+.fs40 {
+  font-size: fcSize(28, 40);
+}

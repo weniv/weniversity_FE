@@ -1,0 +1,186 @@
+@import "./var.scss";
+@import "./theme.scss";
+
+/* reset ------------------------------------------------------- */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+button,
+input {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+button {
+  background: none;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+}
+button:enabled {
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font: inherit;
+}
+
+/* 폰트 ------------------------------------------------------- */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+/* 폰트*/
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 320px;
+  font-size: fcSize(15, 18);
+  line-height: 1.6;
+  font-family: "Pretendard", sans-serif;
+  color: var(--surface);
+  background-color: var(--background);
+}
+
+/* 테마 ------------------------------------------------------- */
+body {
+  --primary: #{$W-primary};
+  --background: #{$W-background};
+  --surface: #{$W-surface};
+  --grayLv1: #{$W-grayLv1};
+  --grayLv2: #{$W-grayLv2};
+  --grayLv3: #{$W-grayLv3};
+  --grayLv4: #{$W-grayLv4};
+
+  --error: #{$W-error};
+  --warn: #{$W-warn};
+  --activation: #{$W-activation};
+
+  --code-pink: #{$W-code-pink};
+  --code-purple: #{$W-code-purple};
+  --code-blue: #{$W-code-blue};
+  --code-green: #{$W-code-green};
+  --code-orange: #{$W-code-orange};
+
+  --primaryA11y: #{$W-primaryA11y};
+  --grayLv3A11y: #{$W-grayLv3A11y};
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --primary: #{$D-primary};
+    --background: #{$D-background};
+    --surface: #{$D-surface};
+    --grayLv1: #{$D-grayLv1};
+    --grayLv2: #{$D-grayLv2};
+    --grayLv3: #{$D-grayLv3};
+    --grayLv4: #{$D-grayLv4};
+    --error: #{$D-error};
+    --warn: #{$D-warn};
+    --activation: #{$D-activation};
+
+    --code-pink: #{$D-code-pink};
+    --code-purple: #{$D-code-purple};
+    --code-blue: #{$D-code-blue};
+    --code-green: #{$D-code-green};
+    --code-orange: #{$D-code-orange};
+
+    --primaryA11y: #{$D-primary};
+    --grayLv3A11y: #{$D-grayLv3};
+  }
+}
+
+/* 공통 ------------------------------------------------------- */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.max-width {
+  width: $maxWidth;
+  margin: auto;
+  max-width: calc(100% - 1.6rem * 2);
+}
+.sub-max-width {
+  width: $subMaxWidth;
+  margin: auto;
+  max-width: calc(100% - 1.6rem * 2);
+}
+
+.fc-primary {
+  color: var(--primary);
+}
+.fc-gray3 {
+  color: var(--grayLv3);
+}
+
+.bg-primary {
+  color: var(--background);
+  background-color: var(--primary);
+}

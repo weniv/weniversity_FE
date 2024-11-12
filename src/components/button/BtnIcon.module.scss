@@ -1,0 +1,14 @@
+@import "../../styles/var.scss";
+
+.btnIcon,
+a.btnIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  max-height: 4rem;
+  padding: 0.6rem;
+  aspect-ratio: 1/1;
+  border-radius: $borderRadius;
+}

@@ -1,0 +1,10 @@
+.button {
+  border: 1px solid var(--grayLv2);
+  border-radius: 50%;
+  overflow: hidden;
+
+  &.active {
+    border-color: var(--primary);
+    outline: 1px solid var(--primary);
+  }
+}
