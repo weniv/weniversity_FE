@@ -1,0 +1,25 @@
+@import "../../styles/function.scss";
+@import "../../styles/var.scss";
+
+.list {
+  width: 100%;
+  max-width: 36rem;
+  @extend .fs16;
+  li {
+    padding: 1.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+    border-bottom: 1px solid var(--grayLv3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.active {
+      background-color: var(--primary);
+      color: #fff;
+    }
+  }
+}

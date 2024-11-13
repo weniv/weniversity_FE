@@ -1,0 +1,26 @@
+@import "../../styles/function.scss";
+
+.nav {
+  margin: 0 auto 0 4rem;
+
+  ul {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    word-break: keep-all;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.btn {
+  font-size: fcSize(16, 18);
+}

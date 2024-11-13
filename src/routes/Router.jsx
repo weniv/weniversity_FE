@@ -12,9 +12,15 @@ import {
   TestPage,
 } from "../pages";
 import RootLayout from "../layouts/RootLayout";
+import LectureLayout from "../layouts/LectureLayout";
 
 const Router = createBrowserRouter(
   [
+    {
+      path: "lectures/:id",
+      element: <LectureLayout />,
+      children: [{ index: true, element: <LecturePage /> }],
+    },
     {
       path: "/",
       element: <RootLayout />,
@@ -39,10 +45,6 @@ const Router = createBrowserRouter(
         {
           path: "mypage",
           element: <MyPage />,
-        },
-        {
-          path: "lectures/:id",
-          element: <LecturePage />,
         },
         {
           path: "login",

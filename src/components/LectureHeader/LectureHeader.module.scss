@@ -1,0 +1,18 @@
+@use "../../styles/function.scss" as *;
+@use "../../styles/theme.scss" as *;
+
+.header {
+  border-bottom: 1px solid var(--grayLv2);
+  z-index: 100;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fcSize(56, 70);
+
+    &.notfound {
+      justify-content: center;
+    }
+  }
+}
