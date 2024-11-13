@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./CourseCard.module.scss";
-import classNames from "classnames";
+import { priceFormat } from "../../utils/priceFormat.js";
 
 const CourseCard = ({ course }) => {
   const { id, title, image, description, price, discount } = course;
@@ -24,10 +24,10 @@ const CourseCard = ({ course }) => {
                         <span>
                           {(((price - discount) / price) * 100).toFixed(0)}%
                         </span>
-                        {discount}원
+                        {priceFormat(discount)}원
                       </>
                     ) : (
-                      <>{price}원</>
+                      <>{priceFormat(price)}원</>
                     )}
                   </>
                 }
