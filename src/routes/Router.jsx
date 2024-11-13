@@ -9,6 +9,7 @@ import {
   LoginPage,
   SignupPage,
   NotFoundPage,
+  TestPage,
 } from "../pages";
 import RootLayout from "../layouts/RootLayout";
 
@@ -50,6 +51,10 @@ const Router = createBrowserRouter(
         {
           path: "signup",
           element: <SignupPage />,
+        },
+        {
+          path: "test",
+          element: <TestPage />,
         },
       ],
     },

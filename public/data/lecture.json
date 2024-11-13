@@ -4,53 +4,143 @@
     "image": "/images/camps/javascript/thumbnail.webp",
     "type": "프론트엔드",
     "title": "JavaScript 부트캠프 1기",
+    "description": "실습 위주의 커리큘럼으로 JavaScript의 핵심 개념과 최신 ES6+ 문법을 마스터할 수 있는 종합 부트캠프입니다.",
     "teacher": "licat",
-    "price": "38000",
-    "discount": "30000"
+    "price": "0",
+    "discount": "0",
+    "likes": 245,
+    "students": 892
   },
   {
     "id": "2",
     "image": "/images/camps/react/thumbnail.webp",
     "type": "프론트엔드",
     "title": "React 마스터 클래스 1기",
+    "description": "상태 관리, 컴포넌트 설계, 그리고 실전 프로젝트를 통해 React의 기본 개념부터 고급 패턴까지 완벽하게 마스터할 수 있는 종합 과정입니다.",
     "teacher": "jejucoding",
     "price": "45000",
-    "discount": "35000"
+    "discount": "45000",
+    "likes": 378,
+    "students": 1250
   },
   {
     "id": "3",
     "image": "/images/camps/python/thumbnail.webp",
     "type": "백엔드",
     "title": "Python 웹 개발 부트캠프 1기",
+    "description": "Python 기초 문법부터 실전 웹 서버 구축까지 단계별 학습으로 백엔드 개발자로 성장할 수 있는 종합 과정입니다.",
     "teacher": "jaehyun",
     "price": "42000",
-    "discount": "32000"
+    "discount": "32000",
+    "likes": 156,
+    "students": 743
   },
   {
     "id": "4",
-    "image": "/images/camps/figma/thumbnail.webp",
-    "type": "디자인",
-    "title": "Figma UI/UX 디자인 워크샵",
-    "teacher": "sarah",
-    "price": "35000",
-    "discount": "28000"
-  },
-  {
-    "id": "5",
     "image": "/images/camps/react/thumbnail.webp",
     "type": "프론트엔드",
     "title": "React Native 앱 개발 캠프",
+    "description": "React Native를 사용하여 iOS와 Android 앱을 개발하는 방법부터 실제 앱 출시까지의 전체 과정을 경험할 수 있는 실전 중심 교육과정입니다.",
     "teacher": "mike",
     "price": "48000",
-    "discount": "38000"
+    "discount": "38000",
+    "likes": 289,
+    "students": 567
   },
   {
-    "id": "6",
+    "id": "5",
     "image": "/images/camps/python/thumbnail.webp",
     "type": "백엔드",
     "title": "Python 데이터 사이언스 코스",
+    "description": "실제 데이터를 다루며 Python을 활용한 데이터 분석과 머신러닝의 기초를 배우는 데이터 사이언티스트 양성 과정입니다.",
     "teacher": "dataking",
     "price": "52000",
-    "discount": "42000"
+    "discount": "52000",
+    "likes": 423,
+    "students": 1102
+  },
+  {
+    "id": "6",
+    "image": "/images/camps/javascript/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "JavaScript 고급 알고리즘 과정",
+    "description": "코딩 테스트 준비와 실전 개발 역량 강화를 위해 JavaScript로 다양한 알고리즘과 자료구조를 구현하며 문제 해결 능력을 키우는 고급 과정입니다.",
+    "teacher": "algoman",
+    "price": "55000",
+    "discount": "45000",
+    "likes": 167,
+    "students": 456
+  },
+  {
+    "id": "7",
+    "image": "/images/camps/react/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "React 실전 프로젝트 캠프",
+    "description": "CI/CD, 테스팅, 배포까지 현업에서 필요한 모든 기술을 다루며 실제 서비스를 구현하는 프로젝트 중심의 React 실전 과정입니다.",
+    "teacher": "jejucoding",
+    "price": "49000",
+    "discount": "39000",
+    "likes": 312,
+    "students": 891
+  },
+  {
+    "id": "8",
+    "image": "/images/camps/python/thumbnail.webp",
+    "type": "백엔드",
+    "title": "Python Django 실무 과정",
+    "description": "Django 프레임워크를 활용한 웹 서비스 개발의 모든 것을 배우며 REST API 설계부터 배포까지 실무에서 바로 활용 가능한 기술들을 학습하는 과정입니다.",
+    "teacher": "jaehyun",
+    "price": "46000",
+    "discount": "36000",
+    "likes": 198,
+    "students": 678
+  },
+  {
+    "id": "9",
+    "image": "/images/camps/javascript/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "JavaScript 웹게임 제작 과정",
+    "description": "JavaScript를 사용하여 게임 로직 구현부터 사운드, 애니메이션 처리까지 다양한 웹 게임을 직접 구현해보는 실습 중심의 과정입니다.",
+    "teacher": "gamepro",
+    "price": "41000",
+    "discount": "31000",
+    "likes": 435,
+    "students": 923
+  },
+  {
+    "id": "10",
+    "image": "/images/camps/react/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "React 성능 최적화 마스터",
+    "description": "메모이제이션, 코드 스플리팅, 번들 최적화 등 React 애플리케이션의 성능을 극대화하는 실제 성능 개선 기법을 다루는 심화 과정입니다.",
+    "teacher": "mike",
+    "price": "51000",
+    "discount": "41000",
+    "likes": 267,
+    "students": 534
+  },
+  {
+    "id": "11",
+    "image": "/images/camps/python/thumbnail.webp",
+    "type": "백엔드",
+    "title": "Python FastAPI 백엔드 과정",
+    "description": "FastAPI를 활용한 고성능 백엔드 서비스 구축을 위한 비동기 처리, API 설계, 보안까지 실무에 필요한 모든 내용을 다루는 전문가 과정입니다.",
+    "teacher": "backendpro",
+    "price": "47000",
+    "discount": "37000",
+    "likes": 178,
+    "students": 445
+  },
+  {
+    "id": "12",
+    "image": "/images/camps/javascript/thumbnail.webp",
+    "type": "프론트엔드",
+    "title": "JavaScript TypeScript 실무 적용",
+    "description": "JavaScript 프로젝트에 TypeScript를 점진적으로 적용하는 방법과 모범 사례를 배우는 기초부터 실전 활용까지의 종합 과정입니다.",
+    "teacher": "tsmaster",
+    "price": "44000",
+    "discount": "34000",
+    "likes": 234,
+    "students": 567
   }
 ]

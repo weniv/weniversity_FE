@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  gap: 2.4rem 2.5rem;
+  margin: fcSize(20, 40) auto 0;
+
+  li {
+    display: flex;
+    align-items: stretch;
+  }
+}

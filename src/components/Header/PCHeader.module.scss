@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .nav {
   margin: 0 auto 0 4rem;
 
@@ -17,4 +19,8 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+}
+
+.btn {
+  font-size: fcSize(16, 18);
 }

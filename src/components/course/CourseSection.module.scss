@@ -1,0 +1,31 @@
+@import "../../styles/function.scss";
+
+.section {
+  position: relative;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: fcSize(20, 24);
+}
+
+.more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+  font-size: fcSize(14, 16);
+  color: var(--grayLv4);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  svg {
+    transform: rotate(90deg);
+    width: 2rem;
+    height: 2rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../styles/var.scss";
+
+.tab_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin: 4rem 0 2rem;
+
+  .tab {
+    padding: 0 1rem;
+    font-size: fcSize(12, 14);
+    position: relative;
+    &.active {
+      color: var(--primaryA11y);
+      font-weight: bold;
+    }
+  }
+}
