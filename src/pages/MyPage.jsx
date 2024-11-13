@@ -1,7 +1,13 @@
-import React from "react"
+import LectureList from "../components/lecture/LectureList";
+import ProfileLectureCard from "../components/profile/ProfileLectureCard";
 
 const MyPage = () => {
-  return <div>MyPage</div>
-}
+  return (
+    <div className="max-width">
+      <ProfileLectureCard />
+      <LectureList />
+    </div>
+  );
+};
 
-export default MyPage
+export default MyPage;

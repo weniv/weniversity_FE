@@ -1,0 +1,18 @@
+.card {
+  width: 100%;
+  background-color: var(--grayLv1);
+  padding: 2.2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.link {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--primary);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+}

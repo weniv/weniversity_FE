@@ -5,7 +5,7 @@ import {
   CoursesPage,
   CourseDetailPage,
   MyPage,
-  ClassroomPage,
+  LecturePage,
   LoginPage,
   SignupPage,
   NotFoundPage,
@@ -41,8 +41,8 @@ const Router = createBrowserRouter(
           element: <MyPage />,
         },
         {
-          path: "classroom/:id",
-          element: <ClassroomPage />,
+          path: "lectures/:id",
+          element: <LecturePage />,
         },
         {
           path: "login",

@@ -3,7 +3,7 @@ export { default as AboutPage } from "./AboutPage";
 export { default as CoursesPage } from "./CoursesPage";
 export { default as CourseDetailPage } from "./CourseDetailPage";
 export { default as MyPage } from "./MyPage";
-export { default as ClassroomPage } from "./ClassroomPage";
+export { default as LecturePage } from "./LecturePage";
 export { default as LoginPage } from "./LoginPage";
 export { default as SignupPage } from "./SignupPage";
 export { default as NotFoundPage } from "./NotFoundPage";
