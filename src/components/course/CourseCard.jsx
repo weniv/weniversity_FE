@@ -17,20 +17,16 @@ const CourseCard = ({ course }) => {
               <span>무료</span>
             ) : (
               <>
-                {
+                {price !== discount ? (
                   <>
-                    {price !== discount ? (
-                      <>
-                        <span>
-                          {(((price - discount) / price) * 100).toFixed(0)}%
-                        </span>
-                        {priceFormat(discount)}원
-                      </>
-                    ) : (
-                      <>{priceFormat(price)}원</>
-                    )}
+                    <span>
+                      {(((price - discount) / price) * 100).toFixed(0)}%
+                    </span>
+                    {priceFormat(discount)}원
                   </>
-                }
+                ) : (
+                  <>{priceFormat(price)}원</>
+                )}
               </>
             )}
           </div>
