@@ -2,7 +2,6 @@ import CourseCard from "./CourseCard";
 import styles from "./CourseList.module.scss";
 
 const CourseList = (props) => {
-  console.log("CourseList", props.courseData);
   const { courseData } = props;
 
   return (
