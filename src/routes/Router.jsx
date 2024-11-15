@@ -9,6 +9,7 @@ import {
   LoginPage,
   SignupPage,
   NotFoundPage,
+  PaymentPage,
 } from "../pages";
 import RootLayout from "../layouts/RootLayout";
 import LectureLayout from "../layouts/LectureLayout";
@@ -52,6 +53,14 @@ const Router = createBrowserRouter(
           element: (
             <PrivateRoute>
               <MyPage />
+            </PrivateRoute>
+          ),
+        },
+        {
+          path: "payment",
+          element: (
+            <PrivateRoute>
+              <PaymentPage />
             </PrivateRoute>
           ),
         },

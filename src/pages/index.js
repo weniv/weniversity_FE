@@ -6,4 +6,5 @@ export { default as MyPage } from "./MyPage";
 export { default as LecturePage } from "./LecturePage";
 export { default as LoginPage } from "./LoginPage";
 export { default as SignupPage } from "./SignupPage";
+export { default as PaymentPage } from "./PaymentPage";
 export { default as NotFoundPage } from "./NotFoundPage";

@@ -2,12 +2,16 @@
 import React from "react";
 import styles from "./UtilTest.module.scss";
 import useAuthStore from "../../store/authStore";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function UtilTest() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const user = useAuthStore((state) => state.user);
   const login = useAuthStore((state) => state.login);
   const logout = useAuthStore((state) => state.logout);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     const testUser = {
@@ -19,6 +23,8 @@ export default function UtilTest() {
     const testToken = "test-token-123";
 
     login(testUser, testToken);
+    // 로그인 후 원래 페이지
+    navigate(location.state?.from ? location.state.from : "/");
   };
 
   return (

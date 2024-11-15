@@ -1,9 +1,21 @@
 import React from "react";
 import styles from "./CourseSummaryCard.module.scss";
 import { priceFormat } from "../../utils/priceFormat";
+import { Link, useNavigate } from "react-router-dom";
+import useAuthStore from "../../store/authStore";
 
 export default function CourseSummaryCard({ course }) {
   const { image, title, description, price, discount } = course;
+  const navigate = useNavigate();
+  const isAutheticated = useAuthStore((state) => state.isAuthenticated);
+
+  const handlePayment = () => {
+    if (isAutheticated) {
+      navigate("/payment");
+    } else {
+      navigate("/login", { state: { from: "/payment" }, replace: true });
+    }
+  };
   return (
     <div className="max-width">
       <section className={styles.card}>
@@ -35,7 +47,6 @@ export default function CourseSummaryCard({ course }) {
               )}
             </li>
           </ul>
-          <button>수강신청 및 결제하기</button>
         </div>
       </section>
       <section>
@@ -43,7 +54,9 @@ export default function CourseSummaryCard({ course }) {
       </section>
       <div className={styles.floating}>
         <div className={styles.tip}>🎉 내일배움카드가 있다면 무료!</div>
-        <button>수강신청 및 결제하기</button>
+        <button type="button" onClick={handlePayment}>
+          수강신청 및 결제하기
+        </button>
       </div>
     </div>
   );
