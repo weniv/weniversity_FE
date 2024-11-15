@@ -1,10 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
+import UtilTestToggle from "../components/test/UtilTestToggle";
 
 const RootLayout = () => {
   return (
     <div className="root-layout">
+      <UtilTestToggle />
       <Header />
       <main>
         <Outlet />

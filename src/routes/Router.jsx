@@ -9,16 +9,21 @@ import {
   LoginPage,
   SignupPage,
   NotFoundPage,
-  TestPage,
 } from "../pages";
 import RootLayout from "../layouts/RootLayout";
 import LectureLayout from "../layouts/LectureLayout";
+import { PrivateRoute } from "./PrivateRoute";
+import { PublicOnlyRoute } from "./PublicOnlyRoute";
 
 const Router = createBrowserRouter(
   [
     {
       path: "lectures/:id",
-      element: <LectureLayout />,
+      element: (
+        <PrivateRoute>
+          <LectureLayout />
+        </PrivateRoute>
+      ),
       children: [{ index: true, element: <LecturePage /> }],
     },
     {
@@ -44,19 +49,27 @@ const Router = createBrowserRouter(
         },
         {
           path: "mypage",
-          element: <MyPage />,
+          element: (
+            <PrivateRoute>
+              <MyPage />
+            </PrivateRoute>
+          ),
         },
         {
           path: "login",
-          element: <LoginPage />,
+          element: (
+            <PublicOnlyRoute>
+              <LoginPage />
+            </PublicOnlyRoute>
+          ),
         },
         {
           path: "signup",
-          element: <SignupPage />,
-        },
-        {
-          path: "test",
-          element: <TestPage />,
+          element: (
+            <PublicOnlyRoute>
+              <SignupPage />
+            </PublicOnlyRoute>
+          ),
         },
       ],
     },

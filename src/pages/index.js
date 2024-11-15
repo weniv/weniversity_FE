@@ -7,6 +7,3 @@ export { default as LecturePage } from "./LecturePage";
 export { default as LoginPage } from "./LoginPage";
 export { default as SignupPage } from "./SignupPage";
 export { default as NotFoundPage } from "./NotFoundPage";
-
-// 삭제할 페이지입니다.
-export { default as TestPage } from "./TestPage";
